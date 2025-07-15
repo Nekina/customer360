@@ -9,7 +9,7 @@
         function set_customer(){
             var cinput = document.querySelector('input[name="selected_customers"]:checked');
                 if (cinput){// Redirects to interact based on customer id
-                    cid = cinput.value;
+                    const cid = cinput.value;
                     window.location = "/interact/"+cid;
                 }
                 else
