@@ -21,6 +21,7 @@ class Interaction(models.Model):
         ('sms', 'SMS'),
         ('email', 'Email'),
         ('letter', 'Letter'),
+        ('social_media', 'Social Media'),
     ]
     DIRECTION_CHOICES = [ # Max char length = 10
         ('inbound', 'Inbound'),
