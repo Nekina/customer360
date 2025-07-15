@@ -29,17 +29,19 @@
                     <th>Email</th>
                     <th>Phone</th>
                     <th>Address</th>
+                    <th>Social Media</th>
                     <th>Selected</th>
                 </tr>
             </thead>
             <tbody>
                 {% for customer in customers %}
                     <tr>
-                        <td>{{customer.id }}</td>
-                        <td>{{customer.name }}</td>
-                        <td>{{customer.email }}</td>
-                        <td>{{customer.phone }}</td>
-                        <td>{{customer.address }}</td>
+                        <td>{{ customer.id }}</td>
+                        <td>{{ customer.name }}</td>
+                        <td>{{ customer.email }}</td>
+                        <td>{{ customer.phone }}</td>
+                        <td>{{ customer.address }}</td>
+                        <td>{{ customer.social_media }}</td>
                         <td>
                             <input type="radio" name="selected_customers" value="{{ customer.id }}">
                         </td>

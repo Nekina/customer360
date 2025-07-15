@@ -14,11 +14,13 @@ def create_customer(request): # New Customer
         email = request.POST["email"]
         phone = request.POST["phone"]
         address = request.POST["address"]
+        social_media = request.POST["social_media"]
         customer = Customer.objects.create(
             name = name,
             email = email,
             phone = phone,
-            address = address
+            address = address,
+            social_media = social_media
         )
         msg = f"Successfully saved new customer {name}"
         return render(request, "add.html", context={"msg":msg})
