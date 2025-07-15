@@ -54,5 +54,5 @@ def interact(request,cid):
             direction = direction,
             summary = summary
         )
-        context["msg"] = "Interaction Success"
+        context = { "msg": "Interaction Success" }
         return render(request, "interact.html", context=context)
